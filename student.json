@@ -1,0 +1,93 @@
+
+[
+    {
+        "IITB_Roll_Number": "2023001",
+        "Name": "Aryan Sharma",
+        "yearOfStudy": "3",
+        "age": 21,
+        "gender": "Male",
+        "Interests": ["travelling", "music"],
+        "Hobbies": ["reading", "playing musical instruments"],
+        "Email": "aryan@example.com",
+        "Photo": "img/aryan_sharma.png"
+        
+    },
+    {
+        "IITB_Roll_Number": "2023002",
+        "Name": "Aditi Singh",
+        "yearOfStudy": "2nd",
+        "age": 20,
+        "gender": "Female",
+        "Interests": ["movies", "art"],
+        "Hobbies": ["Cooking", "Painting"],
+        "Email": "aditi@example.com",
+        "Photo": "img/aditi_singh.png"
+    },
+       
+    {
+        "IITB_Roll_Number": "2023003",
+        "Name": "Rahul Patel",
+        "yearOfStudy": "4th",
+        "age": 22,
+        "gender": "Male",
+        "Interests": ["technology", "sports"],
+        "Hobbies": ["coding", "watching YouTube/instagram"],
+        "Email": "rahul@example.com",
+        "Photo": "img/rahul_patel.png"    
+    },
+
+
+    {
+        "IITB_Roll_Number": "2023004",
+        "Name": "Sneha Desai",
+        "yearOfStudy": "1st",
+        "age": 19,
+        "gender": "Female",
+        "Interests": ["literature", "fashion"],
+        "Hobbies": ["gardening", "painting"],
+        "Email": "sneha@example.com",
+        "Photo": "img/sneha_desai.png"
+        
+    },
+
+
+    {
+        "IITB_Roll_Number": "2023005",
+        "Name": "Rohan Gupta",
+        "yearOfStudy": "3rd",
+        "age": 21,
+        "gender": "Male",
+        "Interests": ["movies", "technology"],
+        "Hobbies": ["playing musical instruments", "photograhy"],
+        "Email": "rohan@example.com",
+        "Photo": "img/rohan_gupta.jpg"
+        
+    },
+
+
+    {
+        "IITB_Roll_Number": "2023006",
+        "Name": "Neha Reddy",
+        "yearOfStudy": "4th",
+        "age": 22,
+        "gender": "Female",
+        "Interests": ["art", "music"],
+        "Hobbies": ["reading", "painting"],
+        "Email": "neha@example.com",
+        "Photo": "img/neha_reddy.png"
+        
+    },
+
+
+    {
+        "IITB_Roll_Number": "2023007",
+        "Name": "Vivek Kumar",
+        "yearOfStudy": "2nd",
+        "age": 20,
+        "gender": "Male",
+        "Interests": ["sports", "technology"],
+        "Hobbies": ["coding", "watching YouTube/Instagram"],
+        "Email": "vivek@example.com",
+        "Photo": "img/vivek_kumar.jpg"
+    }
+]

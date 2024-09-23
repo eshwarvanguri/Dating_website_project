@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forgot Password</title>
+<link rel="stylesheet" href="forgot.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,600;1,6..12,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+ <div class="form-title"> <h2>Forgot Password</h2></div>
+  <div id="usernameDiv">
+    <label for="username" class="username">Enter Username:</label>
+    <input type="text" id="username" class="inputy" placeholder="                 Your   Username">
+    <button class="red" type="button" onclick="checkUsername()">Submit</button>
+  </div>
+  <div id="questionDiv" style="display: none;">
+    <label id="questionLabel" for="answer" class="username"></label>
+    <input type="text" id="answer" class="inputy" placeholder="                    Your  Answer">
+    <button class="red" type="button" onclick="checkAnswer()">Submit</button>
+  </div>
+  <div id="passwordDiv" style="display: none;">
+    <p class="username" id="password"></p>
+  </div>
+  <div   id="backtologin" style="display: none;">
+    <button class="red" type="button" onclick="window.location.href = 'login.html';">Back  To  Login!</button>
+  </div>
+</div>
+<script src="forgot.js"></script>
+</body>
+</html>

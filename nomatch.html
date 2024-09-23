@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Details</title>
+    <style>
+         body {
+            background-image: url('img/nomatch.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position-y: -120px;  
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Set the height of the body to the viewport height */
+            margin: 0; /* Remove default margin */
+            backdrop-filter:blur(.8px);
+        }
+
+        h1 {
+            text-align: center; /* Center the text horizontally */
+            overflow: hidden; /* Hide overflowing characters */
+            white-space: nowrap; /* Prevent wrapping */
+            animation: typing 3s steps(40, end); /* Typing animation */
+            border-right: 3px solid transparent; /* Cursor effect */
+            font-size: 40px;
+            margin-left: 160px;
+        }
+
+        @keyframes typing {
+            from { width: 0; } /* Start with no width */
+            to { width: 100%; } /* Gradually expand to full width */
+        }
+    </style>
+
+    </style>
+</head>
+<body>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const noMatch = urlParams.get('noMatch');
+        // Display message based on query parameter
+        if (noMatch === 'true') {
+            document.body.innerHTML = '<h1>No perfect match found &#128148;</h1>';
+        }
+    </script>
+</body>
+</html>

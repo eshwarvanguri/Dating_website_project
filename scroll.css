@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.scroll-container {
+    height: 100%; /* Set the height as needed */
+    overflow-y: scroll; /* Add a vertical scrollbar */
+}
+
+.interests{
+    text-align: center;
+    padding: 30px;
+}
+
+.gap{
+    padding:10px;
+    line-height: 2.5;
+
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.image-card {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.image-card img {
+    width: 30%; /* Adjust image width as needed */
+    float: left;
+    margin-right: 20px; /* Spacing between image and details */
+}
+
+.image-details {
+    width: 50% ; /* Adjust width of details section as needed */
+    float: left;
+    
+}
+
+.image-details h2,
+.image-details p {
+    margin: 0;
+}
+.btn{
+    position: relative;
+    width: 50%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid rgb(203, 13, 13);
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background: linear-gradient(#081b29, rgba(255, 15, 11, 0.903), #081b29,rgb(235, 72, 72));
+    z-index: -1;
+    transition: .3s;
+}
+
+.btn:hover::before{
+    top: 0;
+}
+
+.redbtn{
+    text-align:center
+}

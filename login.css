@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1{
+    margin: 0; 
+    font-size: 30px;
+    text-align: cetner;
+    font-family: "Cinzel", serif;
+}
+.cersive{
+ font-family: "Dancing Script", cursive;
+}
+.perfect{
+    font-family: "Dancing Script", cursive;
+}
+.shot{
+    position:relative;
+    font-size:60px;
+    left:30px;
+  
+}
+h3{
+font-family: "Cinzel", serif;
+font-size: 80px;
+text-align: left;
+
+}
+
+.chin{
+    position: relative; /* Position relative to its normal position */
+    top: 20px; /* Move 10 pixels up */
+    left: -50px; 
+    color: rgba(240, 239, 231, 0.801); /* Light gold color with transparency */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Blurred shadow effect */
+    animation: shine .7s infinite alternate; 
+
+}
+@keyframes shine {
+    to {
+      text-shadow: 0 0 20px rgba(255, 215, 0, 0.8); 
+    }
+  }
+
+body{
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+    min-height: 100vh;
+    background: url("img/couple\ background1.jpg");
+    background-size:cover;
+    backdrop-filter:blur(2.7px);
+    background-image: linear-gradient(rgba(15, 15, 15, 0.778),
+                       rgba(0, 0, 0, 0.3)), url("img/couple\ background1.jpg")
+}
+
+.wrapper{
+     position: relative;
+    width: 660px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 0, 0, 0.46);
+    bottom: -70px; /* Adjust distance from bottom */
+    right: 0px;
+    border-radius:40px;
+   
+    
+}
+
+.wrapper .form-box{
+    position: absolute;
+    top:0;
+   left:110px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-box h2{
+    font-size: 52px;
+    color: hsl(0, 93%, 49%);
+    text-align: center;
+    text-shadow: 2px 2px 0 #380c0c, 4px 4px 0 #551f1f;
+}
+
+.form-box .input-box{
+    position:relative;
+    width: 100%;
+    height:50px;
+    margin: 25px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #cc5e5e;
+    padding-right: 23px;
+    backdrop-filter:blur(4.5px);
+    font-size: 16px;
+    color: #c40202;
+    font-weight:500;
+    transition: .3s
+}
+
+
+.input-box input:focus,
+.input-box input:valid{
+     border-bottom-color: rgb(209, 192, 35);
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translateY(-50);
+    font-size: 16px;
+    color: #f7f3f3;
+    pointer-events: none;
+    transition:.3s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~lable{
+    top: -5px;
+    color: rgb(255, 253, 255);
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color:#f00909;
+    transition: .3s;
+}
+
+.input-box input:focus~i,
+.input-box input:valid~i{
+    color: rgb(236, 219, 33);
+}
+.btn{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid rgb(203, 13, 13);
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background: linear-gradient(#081b29, rgba(255, 15, 11, 0.903), #081b29,rgb(235, 72, 72));
+    z-index: -1;
+    transition: .3s;
+}
+
+.btn:hover::before{
+    top: 0;
+}
+
+.forgot{
+    font-size: 14.5px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px;
+
+}
+

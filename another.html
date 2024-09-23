@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Details</title>
+    <style>
+
+body {
+            background-image: url('img/lost.avif'); /* Replace 'background.jpg' with the path to your image */
+            background-size:cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Prevent image from repeating */
+            background-position: center top -150px;
+            
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns layout */
+            gap: 20px; /* Gap between columns */
+            max-width: 600px; /* Maximum width of the container */
+            padding: 30px; /* Add padding for better appearance */
+            border: 2px solid gold; /* Add border for the box */
+            border-radius: 10px; /* Add border radius for rounded corners */
+            background: rgba(255, 255, 255, 0.1); /* Background with transparency */
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Box shadow for depth */
+            
+          }
+
+          .btn-container {
+             position: absolute;
+             bottom: 0;
+             left: 50%;
+             transform: translateX(-50%);
+             text-align: center;
+             margin-bottom: 20px; /* Adjust margin for better spacing */
+          }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+           
+        }
+        
+
+        #studentPhoto {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px; /* Add border radius for rounded corners */
+            border: 2px solid gold;
+        }
+
+        
+
+        .btn2 {
+            display: inline-block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 2px solid gold; /* Set border to gold */
+            border-radius: 5px;
+            background-color:  #CC0000;  /* Set background color to red */
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for glass effect */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        .btn2:hover {
+            background-color: #CC0000;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div>
+            <img id="studentPhoto" src="" alt="Student Photo">
+        </div>
+        <div class="details">
+            <h1>Match Details</h1>
+            <div id="matchDetails"></div>
+        </div>
+    </div>
+
+    <script>
+        // Function to retrieve query parameters from the URL
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Retrieve match details from the query parameters
+        var Name = getQueryParameter('Name');
+        var IITB_Roll_Number = getQueryParameter('IITB_Roll_Number');
+        var yearOfStudy = getQueryParameter('yearOfStudy');
+        var age = getQueryParameter('age');
+        var gender = getQueryParameter('gender');
+        var photo = getQueryParameter('photo');
+        var email = getQueryParameter('email');
+        var interests = getQueryParameter('interests');
+        var hobbies = getQueryParameter('hobbies');
+    
+        // Display match details
+        var matchDetails = document.getElementById('matchDetails');
+        matchDetails.innerHTML = `
+            <p><strong>Name:</strong> ${Name}</p>
+            <p><strong>IITB_Roll_Number:</strong> ${IITB_Roll_Number}</p>
+            <p><strong>Year of Study:</strong> ${yearOfStudy}</p>
+            <p><strong>Age:</strong> ${age}</p>
+            <p><strong>Gender:</strong> ${gender}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Interests:</strong> ${interests}</p>
+            <p><strong>Hobbies:</strong> ${hobbies}</p>
+        `;
+
+        var studentPhoto = document.getElementById('studentPhoto');
+        studentPhoto.src = photo;
+        
+        function sendEmail() {
+            // Replace 'mailto' with the recipient's email address
+            var recipientEmail = email;
+            var subject = "Regarding Our Match";
+            var body = "Hello " + Name + ",\n\nI hope you're doing well. I found our match details interesting and would like to get in touch to explore further.\n\nLooking forward to hearing from you.\n\nBest regards,\n[Your Name]";
+
+            // Construct the mailto link
+            var mailtoLink = "mailto:" + recipientEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+            // Open the default email client
+            window.location.href = mailtoLink;
+        }
+
+    </script>
+<div class="btn-container">
+<button class="btn2" type="submit" onclick="window.location.href = 'findmatch.html';"> you wana try again ! </button>
+<button class="btn2" type="button" onclick="sendEmail();">Send Email</button>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="findmatch.css" type="text/css">
+        <title>find your match </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+                                                                                
+                               <!--      find your match form       -->
+
+
+        <div class="main">
+            <div class="register">
+                <h2 class="head2">Find Your Match</h2>
+                <!-- <form id="register" > -->
+                    <div class="mainreg">
+                    <label class="rollNumber" >IITB Roll Number</label>
+                    <br>
+                    <input type="text" name="rollNumber"
+                    id="rollNumber" placeholder="   Enter your roll no" required >
+                    <br><br>
+                    <label class="name" for="name"> Name </label>
+                    <br>
+                    <input type="text" 
+                    id="name"  placeholder="Enter your name" required >
+                    <br><br>
+                    <label class="year"> Year of Study:</label>
+                    <br>
+                    <input type="text" name="yearOfStudy" id="yearOfStudy" placeholder="year of Study" required>
+                    <br><br>
+                    <label class="age">your age :</label>
+                    <br>
+                    <input type="number" name="age" id="age" placeholder="how old are you?" required>
+                    <br><br>
+                    
+                    <label for="gender" class="gender">Gender:</label><br>
+                    <select id="gender" name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="other" > other</option>
+                    </select><br><br>
+                    <label class="email"> email :</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="enter your vaild email" required>
+                    <br><br>
+
+                   
+                                   <!--     interests      -->
+                                
+
+                    <label class="interests">interests </label>
+                    <br><br> 
+                    <input type="checkbox" id="travelling" name="interests" value="travelling">
+                    <label for="travelling"  >travelling</label> 
+                    
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">sports:</label> 
+                    
+                    <input type="checkbox" id="movies" name="interests" value="movies">
+                    <label for="movies">movies:</label> 
+                    <br>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">music</label> 
+                    
+                    <input type="checkbox" id="literature" name="interests" value="literature">
+                    <label for="literature">literature</label> 
+                    
+                    <input type="checkbox" id="fashion" name="interests" value="fashion">
+                    <label for="fashion">fashion</label> 
+                    
+                    <input type="checkbox" id="art" name="interests" value="art">
+                    <label for="art">art</label> 
+                    <br>
+                    <input type="checkbox" id="technology" name="interests" value="technology">
+                    <label for="technology">technology</label> 
+                    <br><br>
+
+
+                                  <!--      hobbies      -->
+
+                    
+                    <label class="hobbies">hobbies </label>
+                    <br><br>
+                    <input type="checkbox" id="reading" name="hobbies" value="reading">
+                    <label for="reading">reading</label> 
+                    
+                    <input type="checkbox" id="Cooking" name="hobbies" value="Cooking">
+                    <label for="Cooking">Cooking</label> 
+                    
+                    <input type="checkbox" id="coding" name="hobbies" value="coding">
+                    <label for="coding">coding</label> 
+                    <br>
+                    <input type="checkbox" id="gardening" name="hobbies" value="gardening">
+                    <label for="gardening">gardening</label> 
+                    
+                    <input type="checkbox" id="painting" name="hobbies" value="painting">
+                    <label for="painting">painting</label> 
+                    <br>
+                    <input type="checkbox" id="watching YouTube/instagram" name="hobbies" value="watching YouTube/instagram">
+                    <label for="watching YouTube/instagram">wacthing Youtube/instagram</label> 
+                    <br>
+                    <input type="checkbox" id="playing musical instruments" name="hobbies" value="playing musical instruments">
+                    <label for="playing musical instruments">playing musical insturments</label> 
+                    
+                    <input type="checkbox" id="photograhy" name="hobbies" value="photograhy">
+                    <label for="photograhy">photograhy</label> 
+                    <br><br>
+                    <button id="submit" type="button" class="btn"> find match </button>
+                <!-- </form> -->
+            </div>
+        </div>
+        </div>
+
+
+                                           <!--      scroll and login button      -->
+
+
+
+        <div class="redbtn">
+            <button class="btn1" type="submit" onclick="window.location.href = 'scroll.html';">Scroll through profiles</button>
+
+            <button class="btn2" type="submit" onclick="window.location.href = 'login.html';">Back to login </button>
+        </div>
+
+        <div id="matchDetails"></div>
+
+        <script src="findmatch.js"></script>
+    </body>
+</html>
