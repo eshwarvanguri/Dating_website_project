@@ -2,7 +2,8 @@
 cse 1st year project of web dev
 
 #About this project
- #Responsive User Interface: Created an intuitive and visually appealing interface using HTML and custom CSS,
+
+ Responsive User Interface: Created an intuitive and visually appealing interface using HTML and custom CSS,
 with input forms for user details like Roll Number, Age, Gender, Interests, and Hobbies.
 
 • Interactive Login and Password Recovery: Developed a secure login page using JavaScript, incorporating
